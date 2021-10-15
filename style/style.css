@@ -30,4 +30,23 @@ img{
     display: flex;
     flex-direction: column;
     width: 20%;
+    position: relative;
+}
+
+a{
+    position: absolute;
+    font-size: 25px;
+    color: white;
+}
+
+.bottom{
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.top{
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
