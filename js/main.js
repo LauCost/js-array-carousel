@@ -26,6 +26,7 @@ const text = [
 //Seleziona contenitore dell'immagine da far vedere
 let contenitore = document.querySelector(".cont_img");
 
+let i = 0
 
 let immagine = items[0];
 
@@ -50,19 +51,47 @@ for (i = 0; i < items.length; i++) {
 
     cont.innerHTML += immagine;
 
+
 }
 
-let piu = document.querySelector(".top");
+let piu = document.querySelector(".bottom");
 
 piu.addEventListener(`click`, function () {
 
-    var i = 0; i++;
+    i++
+
+    if (i > 4) {
+        i = 0;
+    }
 
     let immagine = items[i];
 
-    let titolo = title[0];
+    let titolo = title[i];
 
     const imma = `<img src="${immagine}" alt="${titolo}">`;
 
     contenitore.innerHTML = imma;
+
+
+})
+
+let meno = document.querySelector(".top");
+
+meno.addEventListener(`click`, function () {
+
+    i--
+
+    if (i < 0) {
+        i = 4
+    }
+
+    let immagine = items[i];
+
+    let titolo = title[i];
+
+    const imma = `<img src="${immagine}" alt="${titolo}">`;
+
+    contenitore.innerHTML = imma;
+
+
 })
