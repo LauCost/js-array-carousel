@@ -23,24 +23,46 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
-
+//Seleziona contenitore dell'immagine da far vedere
 let contenitore = document.querySelector(".cont_img");
-let primaImmagine = items[0]
-let primoTitolo = title[0]
-const immagine = `<img src="${primaImmagine}" alt="${primoTitolo}">`;
-contenitore.innerHTML += immagine;
+
+
+let immagine = items[0];
+
+let titolo = title[0];
+
+const imma = `<img src="${immagine}" alt="${titolo}">`;
+
+contenitore.innerHTML = imma;
+
 
 
 let cont = document.querySelector(".img")
 
+//Ciclo for per rappresentare tutte le img sul lato
 for (i = 0; i < items.length; i++) {
 
     const img = items[i];
 
-    let titolo = title[i]
+    let titolo = title[i];
 
     const immagine = `<img src="${img}" alt="${titolo}">`;
 
     cont.innerHTML += immagine;
 
 }
+
+let piu = document.querySelector(".top");
+
+piu.addEventListener(`click`, function () {
+
+    var i = 0; i++;
+
+    let immagine = items[i];
+
+    let titolo = title[0];
+
+    const imma = `<img src="${immagine}" alt="${titolo}">`;
+
+    contenitore.innerHTML = imma;
+})
