@@ -25,16 +25,22 @@ const text = [
 
 
 let contenitore = document.querySelector(".cont_img");
+let primaImmagine = items[0]
+let primoTitolo = title[0]
+const immagine = `<img src="${primaImmagine}" alt="${primoTitolo}">`;
+contenitore.innerHTML += immagine;
+
+
+let cont = document.querySelector(".img")
 
 for (i = 0; i < items.length; i++) {
 
     const img = items[i];
-    if (i == 0) {
 
-        const immagine = `<img src="${img}" alt="${[i]}">`;
+    let titolo = title[i]
 
-        contenitore.innerHTML += immagine;
+    const immagine = `<img src="${img}" alt="${titolo}">`;
 
-        console.log(immagine);
-    }
+    cont.innerHTML += immagine;
+
 }
