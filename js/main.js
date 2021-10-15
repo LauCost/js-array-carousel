@@ -32,9 +32,13 @@ let immagine = items[0];
 
 let titolo = title[0];
 
+let txt = text[0];
+
 const imma = `<img src="${immagine}" alt="${titolo}">`;
 
-contenitore.innerHTML = imma;
+const testo = ` <h1> ${titolo} </h1> <p> ${txt} </p> `
+
+contenitore.innerHTML = imma + testo;
 
 
 
@@ -68,9 +72,13 @@ piu.addEventListener(`click`, function () {
 
     let titolo = title[i];
 
+    let txt = text[i];
+
     const imma = `<img src="${immagine}" alt="${titolo}">`;
 
-    contenitore.innerHTML = imma;
+    const testo = ` <h1> ${titolo} </h1> <p> ${txt} </p> `
+
+    contenitore.innerHTML = imma + testo;
 
 
 })
@@ -89,9 +97,13 @@ meno.addEventListener(`click`, function () {
 
     let titolo = title[i];
 
+    let txt = text[i];
+
     const imma = `<img src="${immagine}" alt="${titolo}">`;
 
-    contenitore.innerHTML = imma;
+    const testo = ` <h1> ${titolo} </h1> <p> ${txt} </p> `
+
+    contenitore.innerHTML = imma + testo;
 
 
 })

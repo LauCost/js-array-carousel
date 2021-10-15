@@ -9,7 +9,7 @@ body{
 }
 
 .cont{
-    width: 40%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,6 +19,8 @@ body{
 
 .cont_img{
     width: 80%;
+    position: relative;
+    color: white;
 }
 
 img{
@@ -49,4 +51,17 @@ a{
     top: 2%;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+h1{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+p{
+    position: relative;
+    bottom: 8%;
+    width: 98%;
+    left: 2%;
 }
